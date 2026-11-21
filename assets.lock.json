@@ -1,0 +1,51 @@
+{
+  "assets": [
+    {
+      "dest": "assets/library/perring-parkway-pete.toon-turnaround",
+      "files": [
+        {
+          "bytes": 680,
+          "path": "bible.json",
+          "sha256": "4ae2c630a0d623ea5fd0aa79447a01d4f1193aef009c60ac33bb7e8d80f200b2"
+        },
+        {
+          "bytes": 2063466,
+          "path": "turnaround.jpeg",
+          "sha256": "0fc38a36cf47a88cc75ba8ae01d14d9f53300be376c0e71379f0493c4599d074"
+        }
+      ],
+      "hash": "e6dc6d12bad1f27a768fc81731a66687a0fb7777f532d69fffce525967a6719f",
+      "id": "perring-parkway-pete.toon-turnaround",
+      "library": {
+        "name": "character-library",
+        "version": "0.1.0"
+      },
+      "type": "character",
+      "version": "0.1.0"
+    },
+    {
+      "dest": "assets/library/super-colby.toon-turnaround",
+      "files": [
+        {
+          "bytes": 669,
+          "path": "bible.json",
+          "sha256": "b1bdfa59dca84ed4351c0e4b880e20165f235c1aef3f83952d552c26afb3f874"
+        },
+        {
+          "bytes": 1518365,
+          "path": "turnaround.jpeg",
+          "sha256": "0f504928ccf0ccaf62e6721a598f800eaaf97d79847e5539c013a29d9585452f"
+        }
+      ],
+      "hash": "23718cac0749d57e279e20979bd3f32abfdd551fd69a1fb77e8c36190aa0fea2",
+      "id": "super-colby.toon-turnaround",
+      "library": {
+        "name": "character-library",
+        "version": "0.1.0"
+      },
+      "type": "character",
+      "version": "0.1.0"
+    }
+  ],
+  "lockVersion": 1
+}

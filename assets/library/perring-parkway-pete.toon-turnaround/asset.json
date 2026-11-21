@@ -1,0 +1,49 @@
+{
+  "id": "perring-parkway-pete.toon-turnaround",
+  "type": "character",
+  "version": "0.1.0",
+  "name": "Perring Parkway Pete: toon front/side turnaround",
+  "description": "Reference turnaround (front and side) of Perring Parkway Pete: gaunt feral charcoal rat with red eyes, foam drool, scrap-plate chest armour and long scaly tail. Same house toon style as Super Colby.",
+  "tags": [
+    "character:pete",
+    "role:villain",
+    "style:cartoon-vector",
+    "view:turnaround",
+    "species:rat"
+  ],
+  "license": "CC0-1.0",
+  "author": "bsommers",
+  "provenance": {
+    "game": "pawedracer",
+    "source": "user-supplied reference graphic",
+    "note": "sources/Perring-Parkway-Pete-front-side.jpeg"
+  },
+  "format": "jpeg+json",
+  "palette": [
+    "#4a423b",
+    "#3a342f",
+    "#a86a68",
+    "#e0262e",
+    "#3b3d3a",
+    "#1a1a1a",
+    "#f1ead8"
+  ],
+  "size": {
+    "w": 2400,
+    "h": 1792
+  },
+  "files": [
+    {
+      "path": "bible.json",
+      "sha256": "4ae2c630a0d623ea5fd0aa79447a01d4f1193aef009c60ac33bb7e8d80f200b2",
+      "bytes": 680
+    },
+    {
+      "path": "turnaround.jpeg",
+      "sha256": "0fc38a36cf47a88cc75ba8ae01d14d9f53300be376c0e71379f0493c4599d074",
+      "bytes": 2063466
+    }
+  ],
+  "preview": "turnaround.jpeg",
+  "hash": "e6dc6d12bad1f27a768fc81731a66687a0fb7777f532d69fffce525967a6719f"
+}

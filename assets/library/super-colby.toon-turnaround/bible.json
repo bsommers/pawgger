@@ -1,0 +1,30 @@
+{
+  "name": "Super Colby",
+  "species": "cat (orange tabby)",
+  "role": "hero",
+  "build": "chubby, round, upright",
+  "colors": {
+    "fur": "#e8963c",
+    "stripes": "#c76a1f",
+    "cream": "#fbe5c8",
+    "shirt": "#3f77bd",
+    "cape": "#f26a10",
+    "eyes": "#8fc04a",
+    "outline": "#1a1a1a"
+  },
+  "outfit": [
+    "long-sleeved blue shirt with red/yellow shield and letter C",
+    "orange cape"
+  ],
+  "features": [
+    "pink inner ears",
+    "cream muzzle, belly patch, paws",
+    "ringed tail with cream tip",
+    "green eyes"
+  ],
+  "mood": "cheerful, smug, heroic",
+  "forbidden": [
+    "existing superhero logos",
+    "realistic anatomy in toon mode"
+  ]
+}

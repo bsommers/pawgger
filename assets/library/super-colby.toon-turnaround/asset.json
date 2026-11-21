@@ -1,0 +1,52 @@
+{
+  "id": "super-colby.toon-turnaround",
+  "type": "character",
+  "version": "0.1.0",
+  "name": "Super Colby: toon front/side turnaround",
+  "description": "Reference turnaround (front and side) of Super Colby: chubby orange tabby in blue shirt with a C shield and orange cape. House toon style: black outline, flat cel fills.",
+  "tags": [
+    "character:colby",
+    "character:super-colby",
+    "role:hero",
+    "style:cartoon-vector",
+    "view:turnaround",
+    "species:cat"
+  ],
+  "license": "CC0-1.0",
+  "author": "bsommers",
+  "provenance": {
+    "game": "pawedracer",
+    "source": "user-supplied reference graphic",
+    "note": "sources/SuperColby-front-side.jpeg"
+  },
+  "format": "jpeg+json",
+  "palette": [
+    "#e8963c",
+    "#c76a1f",
+    "#fbe5c8",
+    "#3f77bd",
+    "#e0392b",
+    "#f4d12e",
+    "#f26a10",
+    "#1a1a1a",
+    "#8fc04a"
+  ],
+  "size": {
+    "w": 2400,
+    "h": 1792
+  },
+  "files": [
+    {
+      "path": "bible.json",
+      "sha256": "b1bdfa59dca84ed4351c0e4b880e20165f235c1aef3f83952d552c26afb3f874",
+      "bytes": 669
+    },
+    {
+      "path": "turnaround.jpeg",
+      "sha256": "0f504928ccf0ccaf62e6721a598f800eaaf97d79847e5539c013a29d9585452f",
+      "bytes": 1518365
+    }
+  ],
+  "preview": "turnaround.jpeg",
+  "hash": "23718cac0749d57e279e20979bd3f32abfdd551fd69a1fb77e8c36190aa0fea2"
+}

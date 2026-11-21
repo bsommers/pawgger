@@ -1,0 +1,69 @@
+{
+  "generator": "tools/extract-toon-characters.mjs",
+  "license": "CC0-1.0",
+  "author": "bsommers",
+  "library": "character-library",
+  "note": "Derived from the CC0 character-library turnaround sheets (cropped, background removed, downscaled). Original art by the library author.",
+  "sprites": {
+    "colby_front": {
+      "asset": "super-colby.toon-turnaround",
+      "view": "front",
+      "w": 270,
+      "h": 384,
+      "sourceSha256": "0f504928ccf0ccaf62e6721a598f800eaaf97d79847e5539c013a29d9585452f",
+      "cropBox": {
+        "x0": 128,
+        "y0": 173,
+        "x1": 1117,
+        "y1": 1579
+      },
+      "sha256": "f39b1d63557f6de4f089a0ead3a70f997f265f7ea320041e7215fab82a33514a",
+      "facing": "front"
+    },
+    "colby_side": {
+      "asset": "super-colby.toon-turnaround",
+      "view": "side",
+      "w": 243,
+      "h": 384,
+      "sourceSha256": "0f504928ccf0ccaf62e6721a598f800eaaf97d79847e5539c013a29d9585452f",
+      "cropBox": {
+        "x0": 1393,
+        "y0": 166,
+        "x1": 2286,
+        "y1": 1579
+      },
+      "sha256": "48c23148103813ea0b263d2a1bc174b799a0b0767b0a3a97e6ce7aee16f37d51",
+      "facing": "left"
+    },
+    "pete_front": {
+      "asset": "perring-parkway-pete.toon-turnaround",
+      "view": "front",
+      "w": 262,
+      "h": 384,
+      "sourceSha256": "0fc38a36cf47a88cc75ba8ae01d14d9f53300be376c0e71379f0493c4599d074",
+      "cropBox": {
+        "x0": 139,
+        "y0": 234,
+        "x1": 1079,
+        "y1": 1610
+      },
+      "sha256": "ad6131feaa40219683c5e465b45bc0b32e7152cbf4a314a2a513c7bf04987bcc",
+      "facing": "front"
+    },
+    "pete_side": {
+      "asset": "perring-parkway-pete.toon-turnaround",
+      "view": "side",
+      "w": 329,
+      "h": 384,
+      "sourceSha256": "0fc38a36cf47a88cc75ba8ae01d14d9f53300be376c0e71379f0493c4599d074",
+      "cropBox": {
+        "x0": 1094,
+        "y0": 229,
+        "x1": 2276,
+        "y1": 1610
+      },
+      "sha256": "ef56676bdcbaa6ff54366302d5672e8005ed32d4dd3edf345e8e97b44842c994",
+      "facing": "left"
+    }
+  }
+}

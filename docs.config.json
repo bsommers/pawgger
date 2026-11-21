@@ -1,0 +1,36 @@
+{
+  "title": "Pawgger",
+  "tagline": "FROM THE WHOPPER TO THE WORKSTATION",
+  "description": "A Frogger parody starring Colby, an orange tabby explorer who has just finished a triple whopper at the Burger King and must cross Perring Parkway to reach the Micro Center. Rat boss Perring Parkway Pete is waiting in the traffic. Three switchable looks: retro 8-bit, Ghibli-style painterly, and toon.",
+  "repo": "https://github.com/bsommers/pawgger",
+  "play_url": "https://bsommers.github.io/pawgger/play/",
+  "goal": "Hop Colby across every lane, fill the five Micro Center bays, and get out of Pete's way.",
+  "controls": [
+    { "key": "Arrow keys / WASD", "action": "Hop (one cell per press)" },
+    { "key": "Space / Z / X", "action": "Jump" },
+    { "key": "Enter", "action": "Confirm" },
+    { "key": "Escape", "action": "Back" },
+    { "key": "P", "action": "Pause" },
+    { "key": "G", "action": "Cycle style: retro, ghibli, toon" }
+  ],
+  "features": [
+    "Three switchable styles: retro 8-bit, ghibli painterly, and toon (Colby and Pete from the character library), with G to cycle or ?style=retro|ghibli|toon in the URL",
+    "Burger King to Micro Center story: start in the Burger King lot, finish at the Micro Center home bays",
+    "Day, dusk and night levels with matching music and sky grading",
+    "Home bays: a computer mouse (200 points) and a graphics card (150 points) as bonuses, nerds cheer when a level clears",
+    "Pickups: tuna, sardine, gold, collar, a whopper and fries",
+    "Generated levels, checked by a validator so every level is fair",
+    "Autopilot bot: clears levels 1-10 on seeds 1-10",
+    "241 tests, zero dependencies, single-file build for offline play"
+  ],
+  "tips": [
+    "Pete patrols the median on later levels, so watch his sweep before you cross.",
+    "Press G to cycle between retro, ghibli and toon, or open the page with ?style=retro, ?style=ghibli or ?style=toon.",
+    "Run the autopilot (botplay) to watch one way through levels 1-10."
+  ],
+  "credits": [
+    "Design, code, pixel art, painted art and music: the Pawgger swarm (see the swarm section)",
+    "Colby and Pete in the toon style are built from the character library"
+  ],
+  "license": "not yet chosen"
+}

@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8"><title>painter-kit sample</title>
+<body style="margin:0;background:#bfe3f7"><canvas id="c" width="960" height="320" style="width:960px;height:320px;image-rendering:auto"></canvas>
+<script type="module">
+import * as kit from './index.js';
+const c = document.getElementById('c'), ctx = c.getContext('2d'); ctx.imageSmoothingEnabled = true;
+ctx.fillStyle = kit.lin(ctx, 0, 0, 0, 320, ['#7fc4f0', '#bfe3f7', '#f6f1d6']); ctx.fillRect(0, 0, 960, 320);
+ctx.fillStyle = kit.lin(ctx, 0, 230, 0, 320, ['#a6d76f', '#6aa55a']); ctx.fillRect(0, 230, 960, 90);
+kit.drawCloud(ctx, 160, 90, 240, 90, 5);
+kit.drawGrassTuft(ctx, 340, 280, 2.2, 1);
+kit.drawCatBlob(ctx, 560, 190, 2.4);
+kit.drawLog(ctx, 700, 210, 230, 52, 9);
+kit.paperGrain(ctx, 960, 320, 1);
+window.__done = true;
+</script>

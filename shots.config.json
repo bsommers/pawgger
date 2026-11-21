@@ -1,0 +1,28 @@
+{
+  "_comment": "Drives tools/shots.mjs. Each shot is captured once per style (style is appended to the url as ?style=<id>). Stills in out/shots are staged to docs/screenshots by docs-kit. Hero GIF: node tools/shots.mjs --hero --only none (--only none skips the stills).",
+  "size": "900x1030",
+  "outDir": "out/shots",
+  "styles": [
+    { "id": "retro", "query": "style=retro" },
+    { "id": "ghibli", "query": "style=ghibli" },
+    { "id": "toon", "query": "style=toon" }
+  ],
+  "shots": [
+    { "id": "title", "url": "/index.html", "wait": 1500 },
+    { "id": "play", "url": "/index.html?autostart=1", "wait": 1500, "keys": "ArrowUp:300,ArrowUp:300" },
+    { "id": "gameover", "url": "/index.html?screen=gameover", "wait": 1500 }
+  ],
+  "hero": {
+    "url": "/index.html?autostart=1",
+    "style": "retro",
+    "size": "700x800",
+    "eval": "window.__pawgger.setBot(true)",
+    "wait": 1500,
+    "frames": 40,
+    "interval": 100,
+    "crop": "672:768:14:16",
+    "width": 560,
+    "fps": 10,
+    "out": "docs/hero.gif"
+  }
+}

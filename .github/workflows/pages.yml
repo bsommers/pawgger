@@ -1,0 +1,44 @@
+name: Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Tests (factory-dependent suites are skipped in CI)
+        run: node --test $(ls test/*.test.mjs test/kits/*.test.mjs test/lib/*.test.mjs | grep -v -e factory-sop -e factory-extract)
+      - name: Build the single-file game
+        run: node tools/build-web.mjs
+      - name: Assemble site (showcase at / and the playable game at /play/)
+        run: |
+          rm -rf _site && mkdir -p _site/play
+          cp -r docs/. _site/
+          cp dist/pawgger.html _site/play/index.html
+          touch _site/.nojekyll
+          test -s _site/index.html && test -s _site/play/index.html
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

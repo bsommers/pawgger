@@ -1,0 +1,31 @@
+{
+  "name": "Perring Parkway Pete",
+  "species": "rat",
+  "role": "villain",
+  "build": "gaunt, hunched, long-limbed",
+  "colors": {
+    "fur": "#4a423b",
+    "shade": "#3a342f",
+    "ears_skin": "#a86a68",
+    "eyes": "#e0262e",
+    "armor": "#3b3d3a",
+    "outline": "#1a1a1a"
+  },
+  "outfit": [
+    "scrap-plate chest armour with shoulder straps"
+  ],
+  "features": [
+    "glowing red eyes",
+    "buck teeth with foam drool",
+    "long scaly ringed tail",
+    "pink clawed hands and feet",
+    "tufted mangy fur"
+  ],
+  "mood": "menacing, rabid",
+  "variants": [
+    "racing suit with pinstripes and sunglasses (comic overlay)"
+  ],
+  "forbidden": [
+    "cute softening"
+  ]
+}
