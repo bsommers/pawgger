@@ -8,7 +8,7 @@
   <a href="https://github.com/bsommers/pawgger/actions/workflows/pages.yml"><img alt="Pages" src="https://github.com/bsommers/pawgger/actions/workflows/pages.yml/badge.svg"></a>
   <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
   <img alt="zero deps" src="https://img.shields.io/badge/dependencies-0-brightgreen">
-  <img alt="tests" src="https://img.shields.io/badge/tests-241%20passing-brightgreen">
+  <img alt="tests" src="https://img.shields.io/badge/tests-244%20passing-brightgreen">
 </p>
 
 A Frogger parody. Colby, an orange tabby, has just finished a triple whopper at the Burger King and must hop across Perring Parkway to the Micro Center, where the computer nerds are waiting. Standing in his way is Perring Parkway Pete, a rat with a fedora and a limo. Keyboard only, plays offline once loaded.
@@ -55,7 +55,7 @@ Level 1 is the Burger King to Micro Center run. Each level after cycles through 
 - Bonuses in the bays and pickups in the lanes: whopper, fries, tuna, sardine, gold and collar
 - Generated levels checked by a validator, so every level is fair
 - Autopilot bot: clears levels 1-10 on seeds 1-10
-- 241 tests, zero dependencies, and a single-file build that plays offline
+- 244 tests, zero dependencies, and a single-file build that plays offline
 
 ## Controls
 
@@ -74,7 +74,7 @@ More detail in [docs/HOW-TO-PLAY.md](docs/HOW-TO-PLAY.md).
 
 ```
 npm start                         # serve on http://127.0.0.1:4781/
-npm test                          # 241 node:test tests, no dependencies
+npm test                          # 244 node:test tests, no dependencies
 node tools/build-web.mjs          # dist/pawgger.html, one self-contained file
 node tools/shots.mjs              # refresh the screenshots in out/shots/
 node tools/shots.mjs --hero --only none && sh tools/make-gif.sh   # hero GIF (needs ffmpeg)
@@ -90,7 +90,7 @@ Pure ES modules, Canvas 2D, procedural pixel and painted art, and WebAudio. No b
 
 Pawgger was built by a swarm of parallel AI agents, each owning one disjoint module and writing a report. The plan assigned 17 modules to Sonnet and 3 to Haiku. Every report, with its verification evidence, deviations and mistakes, lives in [docs/swarm/reports](docs/swarm/reports). Lessons are in [docs/LEARNINGS.md](docs/LEARNINGS.md).
 
-What was verified: the test suite (241 passing), headless screenshots in all three styles, and bot runs through levels 1-10. What was **not** verified: the audio was never listened to by a human. It is tested and generated, not judged by ear.
+What was verified: the test suite (244 passing), headless screenshots in all three styles, and bot runs through levels 1-10. What was **not** verified: the audio was never listened to by a human. It is tested and generated, not judged by ear.
 
 ## Credits and notes
 
