@@ -6,6 +6,7 @@
 <p align="center">
   <a href="https://bsommers.github.io/pawgger/play/"><img alt="Play in browser" src="https://img.shields.io/badge/play-in%20browser-ff8a00"></a>
   <a href="https://github.com/bsommers/pawgger/actions/workflows/pages.yml"><img alt="Pages" src="https://github.com/bsommers/pawgger/actions/workflows/pages.yml/badge.svg"></a>
+  <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-Apache--2.0-blue"></a>
   <img alt="zero deps" src="https://img.shields.io/badge/dependencies-0-brightgreen">
   <img alt="tests" src="https://img.shields.io/badge/tests-241%20passing-brightgreen">
 </p>
@@ -95,4 +96,6 @@ What was verified: the test suite (241 passing), headless screenshots in all thr
 
 Design, code, pixel art, painted art and music by the Pawgger swarm. Colby and Pete in the toon style come from the character library. Pawgger is an affectionate parody, is not affiliated with or endorsed by Burger King, Micro Center or any other trademark it riffs on, and uses no copied logos.
 
-Licence: not yet chosen.
+## Licence
+
+Code and original art are released under the [Apache License 2.0](LICENSE). The Colby and Pete turnaround sheets used by the toon style come from the character library and are CC0-1.0 (see `src/art/toon/library/manifest.json`). Burger King and Micro Center are named only as an affectionate parody; no trademarks or logos are used or licensed here.

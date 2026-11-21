@@ -1,2 +1,13 @@
-{ "name": "pawgger", "version": "0.1.0", "private": true, "type": "module",
-  "scripts": { "start": "node tools/serve.mjs", "tracker": "TRACKER_ROOT=$PWD node tools/swarm-tracker/dashboard/server.mjs", "plan": "TRACKER_ROOT=$PWD node tools/swarm-tracker/bin/swarm-plan.mjs", "test": "node --test test/*.test.mjs test/kits/*.test.mjs test/lib/*.test.mjs" } }
+{
+  "name": "pawgger",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "tracker": "TRACKER_ROOT=$PWD node tools/swarm-tracker/dashboard/server.mjs",
+    "plan": "TRACKER_ROOT=$PWD node tools/swarm-tracker/bin/swarm-plan.mjs",
+    "test": "node --test test/*.test.mjs test/kits/*.test.mjs test/lib/*.test.mjs"
+  },
+  "license": "Apache-2.0"
+}
