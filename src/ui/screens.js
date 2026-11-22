@@ -55,9 +55,10 @@ export function drawTitle(ctx, style, t, menu, o = {}) {
   dim(ctx, 0.5, 16, 224);
   drawLogo(ctx, style, t, 26);
   label(ctx, style, 'A COLBY THE CAT ADVENTURE', W / 2, 70, { align: 'center', color: C.white });
-  const tw = textWidth(ctx, style, TAGLINE);
+  // ghibli's serif is wider than the pixel font: shrink so the plate keeps a margin inside the frame
+  const full = textWidth(ctx, style, TAGLINE), ts = Math.min(1, (W - 24) / full), tw = full * ts;
   plate(ctx, style, W / 2 - tw / 2 - 5, 82, tw + 10, 12, { alpha: 0.8, border: '#ff8a2a' });
-  label(ctx, style, TAGLINE, W / 2, 85, { align: 'center', color: '#ffb347' });
+  label(ctx, style, TAGLINE, W / 2, 85 + (1 - ts) * 3, { align: 'center', color: '#ffb347', scale: ts });
   catHead(ctx, W / 2 - 5 + Math.sin(t * 2) * 0, 100 + Math.abs(Math.sin(t * 5)) * -3, style === 'ghibli');
   menu.draw(ctx, style, 120, { t });
   label(ctx, style, COMPASS, W / 2, 190, { align: 'center', color: C.gold });
