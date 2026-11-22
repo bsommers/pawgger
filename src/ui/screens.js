@@ -5,7 +5,7 @@ import { label, plate, catHead, textWidth, COLORS as C } from './hud.js';
 
 export const TAGLINE = 'FROM THE WHOPPER TO THE WORKSTATION';
 export const GAMEOVER_TEXT = 'OUT OF WHOPPERS';
-export const COMPASS = 'BURGER KING WEST / MICRO CENTER EAST';
+export const COMPASS = 'BURGER KING > MICRO CENTER';
 
 const dim = (ctx, a, y0 = 0, y1 = H) => { ctx.save(); ctx.fillStyle = `rgba(8,4,16,${a})`; ctx.fillRect(0, y0, W, y1 - y0); ctx.restore(); };
 
@@ -21,13 +21,20 @@ export function drawLogo(ctx, style, t, y = 30) {
   const text = 'PAWGGER', gh = style === 'ghibli';
   ctx.save();
   if (!gh) {
-    // 4x blocky letters, one by one so each bobs
-    const sw = 6 * 4, total = text.length * sw - 4, x0 = Math.round((W - total) / 2);
+    // 4x blocky letters, one by one so each bobs. W uses a 7-column glyph (the 5-column font W reads as N at 4x).
+    const adv = (ch) => (ch === 'W' ? 7 : 5) * 4 + 4;
+    const total = [...text].reduce((a, ch) => a + adv(ch), 0) - 4;
+    let gx = Math.round((W - total) / 2);
+    const LOGO_W = ['#.....#', '#.....#', '#..#..#', '#..#..#', '#.#.#.#', '##...##', '.#...#.'];
     for (let i = 0; i < text.length; i++) {
-      const by = y + Math.round(Math.sin(t * 3 + i * 0.7) * 2);
-      label(ctx, style, text[i], x0 + i * sw + 4, by + 4, { scale: 4, color: '#3a1408', shadow: null });
-      label(ctx, style, text[i], x0 + i * sw + 2, by + 2, { scale: 4, color: '#a8501a', shadow: null });
-      label(ctx, style, text[i], x0 + i * sw, by, { scale: 4, color: i % 2 ? '#ffb347' : '#ff8a2a', shadow: null });
+      const by = y + Math.round(Math.sin(t * 3 + i * 0.7) * 2), ch = text[i];
+      const pass = (dx, dy, color) => {
+        if (ch !== 'W') { label(ctx, style, ch, gx + dx, by + dy, { scale: 4, color, shadow: null }); return; }
+        ctx.fillStyle = color;
+        LOGO_W.forEach((row, j) => [...row].forEach((c, k) => { if (c === '#') ctx.fillRect(gx + dx + k * 4, by + dy + j * 4, 4, 4); }));
+      };
+      pass(4, 4, '#3a1408'); pass(2, 2, '#a8501a'); pass(0, 0, i % 2 ? '#ffb347' : '#ff8a2a');
+      gx += adv(ch);
     }
   } else {
     const face = '"Palatino Linotype", Palatino, Georgia, serif'; let px = 38;
